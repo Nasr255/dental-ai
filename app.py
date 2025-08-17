@@ -28,6 +28,3 @@ def ask():
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-if name == "__main__":
-    app.run(host="0.0.0.0", port=5000)
