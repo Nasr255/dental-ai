@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import openai
 import os
 
-app = Flask(__name__)
+app = Flask(__name__)   # ← صححنا هنا
 
 # جلب الـ API key من متغير البيئة
 openai.api_key = os.getenv("OPENAI_API_KEY")
